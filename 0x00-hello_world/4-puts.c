@@ -1,4 +1,5 @@
-/* C puts function */
+/* C puts function. 
+ * Function main prints out a specified string*/
 #include<stdio.h>
 #include<string.h>
 int main(void)
