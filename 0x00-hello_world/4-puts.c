@@ -1,7 +1,7 @@
 /**
  *main - entry point
- 
- return - always zero
+ * 
+ *return - always zero
  */
 #include<stdio.h>
 #include<string.h>
