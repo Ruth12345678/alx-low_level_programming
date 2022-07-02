@@ -2,9 +2,9 @@
 #include<string.h>
 
 /*
- * main-prints out the specified string
+ * main - prints out the specified string
  *
- * return-returns zero
+ * Return: Returns zero
  */
 
 int main(void)
@@ -12,7 +12,6 @@ int main(void)
 	char stra[250];
 
 	strcpy(stra, "\"Programming is like building a multilingual puzzle");
-	puts(stra);
-	
+	puts(stra);	
 	return (0);
 }
