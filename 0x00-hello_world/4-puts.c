@@ -1,10 +1,10 @@
-/*
- * main-Entry point
- *
- * return-Always zero
- */
 #include<stdio.h>
 #include<string.h>
+/*
+ * main-prints out the specified string
+ *
+ * return-returns zero
+ */
 int main(void)
 {
 	char stra[250];
