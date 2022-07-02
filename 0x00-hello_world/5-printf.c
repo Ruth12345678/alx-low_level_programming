@@ -3,12 +3,13 @@
 /**
  * main - returns a string
  *
- * Return - Returns zero
+ * return - returns zero
  */
 
-int main(){
+int main(void)
+{
 	char str[] = "with proper grammar, but the outcome is a piece of art,\n";
 
-	printf("%s",str);
-	return(0);
+	printf("%s", str);
+	return (0);
 }
