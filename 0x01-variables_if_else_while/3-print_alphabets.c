@@ -11,12 +11,12 @@ int main(void)
 
 	for (lets = 'a'; lets <='z'; lets++)
 	{
-		putschar(lets);
+		putchar(lets);
 	}
 	for (lets = 'A'; lets <= 'Z'; lets++)
 	{
-		putschar(lets);
-		putschar("\n");
+		putchar(lets);
+		putchar("\n");
 	}
 	return (0);
 }
