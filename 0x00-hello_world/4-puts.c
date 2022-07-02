@@ -1,7 +1,7 @@
 /* C puts function */
 #include<stdio.h>
 #include<string.h>
-int main(void) 
+int main(void)
 {
 	char stra[250];
 
