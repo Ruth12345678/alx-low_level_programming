@@ -1,9 +1,11 @@
 /* C puts function */
 #include<stdio.h>
 #include<string.h>
-int main(){
+int main(void) 
+{
 	char stra[250];
-	strcpy(stra,"\"Programming is like building a multilingual puzzle");
+
+	strcpy(stra, "\"Programming is like building a multilingual puzzle");
 	puts(stra);
-	return(0);
+	return (0);
 }
