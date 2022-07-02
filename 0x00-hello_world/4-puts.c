@@ -1,4 +1,8 @@
-/* C puts functio. Function main prints out a specified string*/
+/**
+ *main - entry point
+ 
+ return - always zero
+ */
 #include<stdio.h>
 #include<string.h>
 int main(void)
