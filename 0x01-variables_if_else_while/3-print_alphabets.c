@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 /**
  * main - entry point
  *
@@ -16,7 +17,7 @@ int main(void)
 	for (lets = 'A'; lets <= 'Z'; lets++)
 	{
 		putchar(lets);
-		putchar("\n");
 	}
+	putchar('\n');
 	return (0);
 }
