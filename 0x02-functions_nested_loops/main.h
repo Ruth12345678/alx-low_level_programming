@@ -1,4 +1,5 @@
-#include<stdio.h>
+int printa(void);
+void print_alphabet(void);
 
 int printa(void)
 {
@@ -8,13 +9,12 @@ int printa(void)
 	return (0);
 }
 
-void print_alphabet(void)
-{
-	char b;
+void print_alphabet(void){
+	char ab;
 
-	for (b = 'a'; b <= 'z'; b++)
+	for(ab = 'a'; ab <= 'z'; ab++)
 	{
-		putchar(b);
+		putchar(ab);
 	}
 	putchar('\n');
 }
