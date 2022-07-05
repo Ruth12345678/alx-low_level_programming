@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 int printa(void);
 void print_alphabet(void);
 
