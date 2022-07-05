@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include "main.h"
 
 /**
  * main - entry point
@@ -9,6 +10,6 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	printa();
 	return (0);
 }
