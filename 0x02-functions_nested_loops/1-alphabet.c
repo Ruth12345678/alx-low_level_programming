@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - entry point
  *
  * Return: exit point
  */
@@ -11,7 +11,7 @@ void print_alphabet(void)
 {
 	char ab;
 
-	for( ab = 'a'; ab <= 'z'; ab++)
+	for(ab = 'a'; ab <= 'z'; ab++)
 	{
 		putchar(ab);
 	}
