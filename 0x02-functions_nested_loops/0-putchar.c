@@ -10,6 +10,11 @@
 
 int main(void)
 {
-	printa();
+	int i;
+	char e[8] = "_putchar";
+
+	for (i = 0; i <= 7; i++)
+		_putchar(e[i]);
+	_putchar('\n');
 	return (0);
 }
