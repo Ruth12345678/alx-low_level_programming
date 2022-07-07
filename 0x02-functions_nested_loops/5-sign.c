@@ -17,7 +17,7 @@ int print_sign(int n)
 		val = 1;
 		_putchar('+');
 	}
-	else if (n = 0)
+	else if (n == 0)
 	{
 		val = 0;
 		_putchar('0');
