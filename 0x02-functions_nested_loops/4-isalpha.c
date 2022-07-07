@@ -3,14 +3,14 @@
 /**
  * _isalpha - checks if values is an uppercase letter
  *
- * @c - input character
+ * @c: input character
  *
  * Return: exit point
  */
 
 int _isalpha(int c)
 {
-	char g,h;
+	char g, h;
 	int lcheck = 0;
 
 	for (g = 'A'; g <= 'Z'; g++)
