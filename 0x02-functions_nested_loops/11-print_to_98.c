@@ -2,7 +2,7 @@
 #include<stdio.h>
 
 /**
- * print_to_98 - ints numbers from n to ninety-eight 
+ * print_to_98 - ints numbers from n to ninety-eight
  *
  * @n: input number
  *
