@@ -2,7 +2,8 @@
 #include<stdio.h>
 
 /**
- * print_to_98 -  prints all natural numbers from n to ninety-eight, followed by a new line.
+ * print_to_98 - ints numbers from n to ninety-eight
+ * 
  *
  * @n: input number
  *
