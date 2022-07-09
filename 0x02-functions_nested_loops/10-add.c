@@ -4,6 +4,10 @@
 /**
  * add - addition
  *
+ * @a: first input
+ *
+ * @b: second input
+ *
  * Return: zero
  */
 
