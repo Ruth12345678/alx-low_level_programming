@@ -4,7 +4,7 @@
 /**
  * reset_to_98 - resets value to ninety-eight
  *
- * @*n: input pointer
+ * @n: input pointer
  *
  * Return: returns a value
  */
