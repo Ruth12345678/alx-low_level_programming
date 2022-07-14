@@ -8,7 +8,7 @@
  * @dest: destination
  *
  * @src: source
- * 
+ *
  * Return: returns value
  */
 
@@ -19,7 +19,7 @@ char *_strcpy(char *dest, char *src)
 	do {
 		a++;
 		dest[a] = src[a];
-	} while ( src[a] != '\0');
+	} while (src[a] != '\0');
 
 	return (dest);
 }
