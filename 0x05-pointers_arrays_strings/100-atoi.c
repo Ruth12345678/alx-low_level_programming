@@ -13,19 +13,21 @@ int _atoi(char *s)
 	int a;
 	int b = 0;
 	int c = -1;
-	int d = 0;
+	int brk = 0;
 
 	for (a = 0; s[a] != '\0'; a++)
 	{
 		if (s[a] == '-')
+		{
 			c = c * -1;
-		if (s[a] >= '0' && s[a] <= '9')
+		}
+		else if (s[a] >= '0' && s[a] <= '9')
 		{
 			b = b * 10;
 			b -= (s[a] - '0');
-			d = 1;
+			brk = 1;
 		}
-		else if (d == 1)
+		else if (brk == 1)
 			break;
 	}
 	b = c * b;
