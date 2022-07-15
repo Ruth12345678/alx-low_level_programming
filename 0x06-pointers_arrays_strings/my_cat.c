@@ -44,5 +44,5 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 
-	return (dest);
+	return (dest[i]);
 }
