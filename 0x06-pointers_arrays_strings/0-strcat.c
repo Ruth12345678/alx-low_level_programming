@@ -15,35 +15,15 @@
 
 char *_strcat(char *dest, char *src)
 {
-	size_t len1, len2;
-	char *new_s = malloc((len1 = strlen(dest)) + (len2 = strlen(src)) + 1);
+	int a = -1, i;
+
+	for (i = 0; dest[i] != '\0'; i++);
+	       
+	do {
+		a++;
+		dest[i] = src[a];
+		i++;
+	} while (src[a] != '\0');
 	
-	int i = 0;
-
-	int j = 0;
-
-	while (dest[i] != '\0')
-	{
-		new_s[i] = dest[i];
-		i++;
-		j++;
-	}
-	i = 0;
-	while (src[i] != '\0')
-	{
-		new_s[j] = src[i];
-		i++;
-		j++;
-	}
-	new_s[j] = '\0';
-	i = 0;
-
-	while (new_s[i])
-	{
-		dest[i] = new_s[i];
-		i++;
-	}
-	dest[i] = '\0';
-
 	return (dest);
 }
