@@ -39,9 +39,9 @@ char *_strcat(char *dest, char *src)
 
 	while (new_s[i])
 	{
-		dest[i] = new_s[i];
+	i	dest[i] = new_s[i];
 		i++;
 	}
 
-	return (dest[i]);
+	return (dest);
 }
