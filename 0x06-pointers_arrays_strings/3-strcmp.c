@@ -4,7 +4,7 @@
 #include<stdlib.h>
 
 /**
- * _strcmp: compares two strings
+ * _strcmp - compares two strings
  *
  * @s1: first string
  *
@@ -15,8 +15,26 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int neg;
+	int neg, a;
 
-	neg = s1[0] - s2[0];
+	if (s1 != s2)
+	{
+		for (a = 0; s1[a] || s2[a]; a++)
+		{
+			if (s1[a] != s2[a])
+			{
+				neg = s1[a] - s2[a];
+				break;
+			}
+			else if (s1[a] == s2[a])
+			{
+				continue;
+			}
+		}
+	}
+	else
+	{
+		neg = 0;
+	}
 	return (neg);
 }
