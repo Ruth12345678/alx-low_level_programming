@@ -19,7 +19,7 @@ char *cap_string(char *stra)
 
 	for (a = 0; stra[a]; a++)
 	{
-		 if (stra[(a - 1)] == ' ' || stra[(a - 1)] == ';' || stra[(a - 1)] ==  '.' || stra[(a - 1)] ==  '!' || stra[(a - 1)] == '?' || stra[(a - 1)] == '(' || stra[(a - 1)] == ')' || stra[(a - 1)] == '{' || stra[(a - 1)] == '}' || stra[(a - 1)] == '\n' || stra[(a - 1)] == '\t' || stra[(a - 1)] == ',')
+		 if (stra[(a - 1)] == ' ' || stra[(a - 1)] == ';' || stra[(a - 1)] ==  '.' || stra[(a - 1)] ==  '!' || stra[(a - 1)] == '?' || stra[(a - 1)] == '(' || stra[(a - 1)] == ')' || stra[(a - 1)] == '{' || stra[(a - 1)] == '}' || stra[(a - 1)] == '\n' || stra[(a - 1)] == '\t' || stra[(a - 1)] == ',' || stra[(a - 1)] == '"')
 		{
 			stra[a] = toupper(stra[a]);
 		}
