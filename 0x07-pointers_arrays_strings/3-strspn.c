@@ -25,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 				a++;
 				break;
 			}
-		if(!(*--accept))
+		if (!(*--accept))
 			break;
 		accept = b;
 	}
