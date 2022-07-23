@@ -3,7 +3,7 @@
 #include<string.h>
 
 /**
- * _strpbrk(char *s, char *accept)
+ * _strpbrk- returns a pointer to s starting from char accept.
  *
  * @s: string
  *
@@ -16,18 +16,18 @@ char *_strpbrk(char *s, char *accept)
 {
 	if (s == NULL || accept == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 	while (*s)
 	{
-		if(strchr(accept, *s))
+		if (strchr(accept, *s))
 		{
-			return s;
+			return (s);
 		}
 		else
 		{
 			s++;
 		}
 	}
-	return NULL;
+	return (NULL);
 }
