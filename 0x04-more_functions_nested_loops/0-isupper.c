@@ -5,7 +5,7 @@
  * _isupper - checks for an uppercase character
  *
  * @c: input character
- * 
+ *
  * Return: returns a value
  */
 
@@ -20,7 +20,6 @@ int _isupper(int c)
 		{
 			b = 1;
 			return (b);
-			break;
 		}
 		else if (c != a && a == 'Z')
 		{

@@ -13,18 +13,16 @@
 
 int _isdigit(int c)
 {
-	int a;
+	int b = 0;
 
-	for (a = 0; a <= 9; a++)
+	if ((c >= 0 && c <= 9) || (c >= '0' && c <= '9'))
 	{
-		if (a == c)
-		{
-			return (1);
-		}
-		else if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		{
-			return (0);
-		}
+		b = 1;
 	}
-	return (1);
+	else
+	{
+		b = 0;
+	}
+
+	return (b);
 }
