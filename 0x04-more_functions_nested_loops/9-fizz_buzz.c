@@ -14,28 +14,28 @@ void fibu(void)
 
 	for (a = 1; a <= 100; a++)
 	{
-		if ((a % 3 == 0) && (a % 5 != 0))
+		if (a != 100)
 		{
-			printf("%s ", f);
-		}
-		else if ((a % 5 == 0) && (a % 3 != 0))
-		{
-			printf("%s ", b);
-		}
-		else if ((a % 5 == 0) && (a % 3 == 0))
-		{
-			printf("%s%s ", f, b);
-		}
-		else
-		{
-			if (a != 100)
+			if ((a % 3 == 0) && (a % 5 != 0))
 			{
-				printf("%d ", a);
+				printf("%s ", f);
+			}
+			else if ((a % 5 == 0) && (a % 3 != 0))
+			{
+				printf("%s ", b);
+			}
+			else if ((a % 5 == 0) && (a % 3 == 0))
+			{
+				printf("%s%s ", f, b);
 			}
 			else
 			{
-				printf("%d", a);
+				printf("%d ", a);
 			}
+		}
+		else
+		{
+			printf("%s", b);
 		}
 	}
 	putchar('\n');
