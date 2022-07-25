@@ -8,14 +8,22 @@
 
 void more_numbers(void)
 {
-	int count, num;
+	int count = 0;
+	char num, num2;
 
-	for (count = 0; count <= 10; count++)
+	while (count < 10)
 	{
 		for (num = 0; num <= 14; num++)
 		{
-			printf("%i", num);
+			num2 = num;
+			if (num > 9)
+			{
+				_putchar('1');
+				num2 = num % 10;
+			}
+			_putchar('0' + num2);
 		}
-		putchar('\n');
+		_putchar('\n');
+		count++;
 	}
 }
