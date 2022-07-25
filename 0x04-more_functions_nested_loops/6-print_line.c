@@ -3,7 +3,9 @@
 #include<string.h>
 
 /**
- * print-line - prints a line
+ * print_line - prints a line
+ *
+ * @n: line size
  */
 
 void print_line(int n)

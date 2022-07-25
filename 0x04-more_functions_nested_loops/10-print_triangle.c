@@ -4,12 +4,14 @@
 
 /**
  * print_triangle - prints a triangle
+ *
+ * @size: triangle size
  */
 
 void print_triangle(int size)
 {
 	int base, height, len;
-	
+
 	if (size > 0)
 	{
 		for (base = 1; base <= size; base++)
@@ -29,4 +31,4 @@ void print_triangle(int size)
 	{
 		_putchar('\n');
 	}
-}		
+}

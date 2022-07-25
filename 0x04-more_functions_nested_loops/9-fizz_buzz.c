@@ -28,7 +28,14 @@ void fibu(void)
 		}
 		else
 		{
-			printf("%d ", a);
+			if (a != 100)
+			{
+				printf("%d ", a);
+			}
+			else
+			{
+				printf("%d", a);
+			}
 		}
 	}
 	putchar('\n');
