@@ -23,11 +23,14 @@ char *create_array(unsigned int size, char c)
 	if (size != 0)
 	{
 		arr = malloc(sizeof(char) * size);
-		for (n = 0; n < size; n++)
+		if (arr != NULL)
 		{
-			arr[n] = c;
+			for (n = 0; n < size; n++)
+			{
+				arr[n] = c;
+			}
 		}
-		if (arr == NULL)
+		else
 		{
 			printf("Can't allocate %i bytes (after %i calls)\n", size, a);
 			return (arr);
