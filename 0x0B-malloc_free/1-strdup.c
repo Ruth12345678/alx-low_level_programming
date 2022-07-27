@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	a = 0;
 	if (str != NULL)
 	{
-		stra = malloc(sizeof(stra) * 1);
+		stra = malloc(alen);
 		if (stra != NULL)
 		{
 			for (a = 0; a < alen; a++)
@@ -27,8 +27,9 @@ char *_strdup(char *str)
 				stra[a] = str[a];
 			}
 		}
-		else
+		else if (stra == NULL)
 		{
+			printf("failed to allocate memory after %d calls", a);
 			return (NULL);
 		}
 	}
