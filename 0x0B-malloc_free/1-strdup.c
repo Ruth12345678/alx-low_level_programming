@@ -20,9 +20,16 @@ char *_strdup(char *str)
 	if (str != NULL)
 	{
 		stra = malloc(sizeof(stra) * 1);
-		for (a = 0; a < alen; a++)
+		if (stra != NULL)
 		{
-			stra[a] = str[a];
+			for (a = 0; a < alen; a++)
+			{
+				stra[a] = str[a];
+			}
+		}
+		else
+		{
+			return (NULL);
 		}
 	}
 	else
