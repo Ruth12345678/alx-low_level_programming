@@ -33,9 +33,8 @@ char *_strdup(char *str)
 			return (NULL);
 		}
 	}
-	else if (str == NULL)
+	else
 	{
-		printf("failed to allocate memory after %d calls 2.", a);
 		return (NULL);
 	}
 	return (stra);
