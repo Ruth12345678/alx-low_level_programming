@@ -31,5 +31,5 @@ int _atoi(char *s)
 			break;
 	}
 	b = c * b;
-	return (res);
+	return (b);
 }
