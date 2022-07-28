@@ -19,6 +19,7 @@ char *_strdup(char *str)
 	if (str != NULL)
 	{
 		int alen = strlen(str) + 1;
+
 		stra = malloc(alen);
 		if (stra != NULL)
 		{
