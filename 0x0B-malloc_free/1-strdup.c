@@ -14,10 +14,11 @@
 char *_strdup(char *str)
 {
 	char *stra;
-	int a = 0, alen = strlen(str) + 1;
+	int a = 0;
 
 	if (str != NULL)
 	{
+		int alen = strlen(str) + 1;
 		stra = malloc(alen);
 		if (stra != NULL)
 		{
@@ -32,8 +33,9 @@ char *_strdup(char *str)
 			return (NULL);
 		}
 	}
-	else
+	else if (str == NULL)
 	{
+		printf("failed to allocate memory after %d calls 2.", a);
 		return (NULL);
 	}
 	return (stra);
