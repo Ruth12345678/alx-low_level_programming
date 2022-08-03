@@ -5,21 +5,30 @@
 /**
  * prifac - prints fprime factor(largest)
  *
- * @num: number to be factorized
+ * @num: number to be factorized. we used integer factorization
+ * method/lcm to solve this
  */
 
 void prifac(int num)
 {
-	int num2;
+	int tst = 2, max;
 
-	for (num2 = 2; num > 1; num2++)
+	while (num != 0)
 	{
-		while (num % num2 == 0)
+		if (num % tst != 0)
 		{
-			num = num / num2;
+			tst  = tst + 1;
 		}
-		printf("%d", num2);
-		putchar('\n');
+		else
+		{
+			max = num;
+			num = num / tst;
+			if (num == 1)
+			{
+				printf("%d\n", max);
+				break;
+			}
+		}
 	}
 }
 
@@ -31,6 +40,6 @@ void prifac(int num)
 
 int main(void)
 {
-	prifac(24);
+	prifac(1231952);
 	return (0);
 }
