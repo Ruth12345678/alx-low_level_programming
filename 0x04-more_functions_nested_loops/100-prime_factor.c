@@ -9,9 +9,9 @@
  * method/lcm to solve this
  */
 
-void prifac(int num)
+void prifac(long int num)
 {
-	int tst = 2, max;
+	long int tst = 2, max;
 
 	while (num != 0)
 	{
@@ -25,7 +25,7 @@ void prifac(int num)
 			num = num / tst;
 			if (num == 1)
 			{
-				printf("%d\n", max);
+				printf("%li\n", max);
 				break;
 			}
 		}
@@ -40,6 +40,6 @@ void prifac(int num)
 
 int main(void)
 {
-	prifac(1231952);
+	prifac(612852475143);
 	return (0);
 }
