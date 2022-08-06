@@ -11,7 +11,7 @@
 
 int _atoi(char *s)
 {
-	int a = 0, b = 0, sign = 1;
+	int a = 0, b = 0, sign = 1, c;
 
 	if (*s == '\0')
 	{
@@ -31,6 +31,11 @@ int _atoi(char *s)
 		else if (s[a] >= '0' && s[a] <= '9')
 		{
 			b = b * 10 + s[a] - '0';
+			c = 1;
+		}
+		else if (c == 1)
+		{
+			break;
 		}
 		else
 		{
