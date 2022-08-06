@@ -24,7 +24,11 @@ int _atoi(char *s)
 	}
 	for (a = a; s[a] != '\0'; ++a)
 	{
-		if (s[a] >= '0' && s[a] <= '9')
+		if (s[a] == '-')
+		{
+			sign = -1 * sign;
+		}
+		else if (s[a] >= '0' && s[a] <= '9')
 		{
 			b = b * 10 + s[a] - '0';
 		}
