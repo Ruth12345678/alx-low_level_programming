@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include<stddef.h>
 #include<stdio.h>
 #include<string.h>
 #include<stdarg.h>
@@ -38,6 +39,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			}
 		}
 		va_end(c);
+		
 		putchar('\n');
+	}
+	else
+	{
 	}
 }
