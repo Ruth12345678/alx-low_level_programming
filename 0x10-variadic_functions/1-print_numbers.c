@@ -25,14 +25,16 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 		else
 		{
-			for (a = 0; a <= n; a++)
+			for (a = 0; a < n; a++)
 			{
 				if (a < n - 1)
 				{
 					printf("%d%s", va_arg(c, unsigned int), separator);
 				}
 				else
+				{
 					printf("%d", va_arg(c, unsigned int));
+				}
 			}
 		}
 		va_end(c);
