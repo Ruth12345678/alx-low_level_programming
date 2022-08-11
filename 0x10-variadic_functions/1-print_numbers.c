@@ -14,19 +14,19 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	if (separator != NULL)
+	va_list c;
+	unsigned int a;
+
+	va_start(c, n);
+	if (n == 0)
 	{
-		va_list c;
-		unsigned int a;
+	}
 
-		va_start(c, n);
-		if (n == 0)
+	else
+	{
+		for (a = 0; a < n; a++)
 		{
-		}
-
-		else
-		{
-			for (a = 0; a < n; a++)
+			if (separator != NULL)
 			{
 				if (a < n - 1)
 				{
@@ -35,11 +35,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 				else
 				{
 					printf("%d", va_arg(c, unsigned int));
-				}	
+				}
 			}
+			else
+			{
+				printf("%d", va_arg(c, unsigned int));
+			}	
 		}
-		va_end(c);
-		
-		putchar('\n');
 	}
+	va_end(c);
+		
+	putchar('\n');
 }
