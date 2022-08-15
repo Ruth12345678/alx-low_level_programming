@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	int a = 0;
 
 	va_start(form, format);
-	while (format[a] != '\0')
+	while (format != NULL && format[a] != '\0')
 	{
 		switch (format[a])
 		{
@@ -49,5 +49,4 @@ void print_all(const char * const format, ...)
 		a++;
 	}
 	putchar('\n');
-	va_end(form);
 }
