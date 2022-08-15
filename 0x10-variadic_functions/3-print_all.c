@@ -36,9 +36,8 @@ void print_all(const char * const format, ...)
 			case 's':
 				str = va_arg(form, char *);
 				if (str == NULL)
-					printf("(nil)");
-				else
-					printf("%s", str);
+					str = "(nil)";
+				printf("%s", str);
 				ex = 0;
 				break;
 			default:
