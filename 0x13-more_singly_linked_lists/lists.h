@@ -2,6 +2,12 @@
 #define LISTS_H
 
 #include<stdlib.h>
+/**
+ * struct listint_a - linked list syntax
+ * @n : integer value
+ *
+ * @next: pointer to next node
+ */
 
 typedef struct listint_a
 {
