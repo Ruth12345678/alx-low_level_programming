@@ -20,12 +20,11 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	temp = malloc(sizeof(listint_t));
 	if (temp == NULL)
 	{
-		printf("Error, please revert to code");
 		free(temp);
 		return (NULL);
 	}
 	temp->n = n;
 	temp->next = *head;
-	
+	*head = temp;
 	return (temp);
 }
